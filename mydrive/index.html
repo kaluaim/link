@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MyShare Drive</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="resource/lightbox2/css/lightbox.min.css" rel="stylesheet">
+        <link href="resource/style.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <div class="header clearfix">
+                <h3 class="text-muted">MyShare Drive</h3>
+            </div>
+            <div class="row marketing">
+                <div class="well"><center>A collection of scripts wraps around a WebDAV client.</center></div>
+                <div class="col-lg-12">
+                    <h4>About</h4>
+                    <p class="text-justify">An application that has been installed in over 1,000 PCs. It is a collection of Batch, VB Script, and registry files packaged inside of an .exe file that installs, configures, maintains, and monitors a WebDAV client (<a href="https://southrivertech.com/products/webdrive/" alt="WebDrive" target="_blank">WebDrive</a>) to connect to <a href="https://en.wikipedia.org/wiki/Alfresco_(software)" alt="Alfresco" target="_blank">Alfresco (ECM)</a>.</p>
+                    <h4>How it works</h4>
+                    <p class="text-justify">Basically the scripts will performs the following:</p>
+                    <ul>
+                        <li class="text-justify">Determine the OS architecture (32/64 bit), in order to install the correct version of <a href="https://southrivertech.com/products/webdrive/" alt="WebDrive" target="_blank">WebDrive</a> then install it.</li>
+                        <li class="text-justify">Based on the user location and domain, determine the authentication method; <a href="https://en.wikipedia.org/wiki/NT_LAN_Manager" alt="NTML" target="_blank">NTML</a> for on-premise users or basic authentication for outside users.</li>
+                        <li class="text-justify">Configure .REG file that contain MyShare (<a href="https://en.wikipedia.org/wiki/Alfresco_(software)" alt="Alfresco" target="_blank">Alfresco</a>) configuration, in addition to the user specific details, and import it to Windows Registry <a href="https://en.wikipedia.org/wiki/Windows_Registry" alt="Windows Registry" target="_blank">Windows Registry</a>.</li>
+                        <li class="text-justify">Configure a scheduled task that will insure the integrity of the connection, and if it faced any problem the task will try to fix the problem by performing multiple procedures. If the problem remain, it will stop the application and notifiy both the user via error messege and the admin via email.</li>
+                    </ul>
+                    <p class="text-justify">In addition, the scripts log every action in a file on disk using a small logging functionality to rotate and manage the log file so it doesn't take unnecessary space.</p>
+                    <h4>Screenshots</h4>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <center>
+                                <a class="img-responsive img-rounded" data-lightbox="screenshots" data-title="Screenshot 1 from installer" href="resource/img/screenshot_1.png"><img class="img-responsive img-rounded img-thumbnail" src="resource/img/screenshot_1.png"></a>
+                            </center>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <center>
+                                <a class="img-responsive img-rounded" data-lightbox="screenshots" data-title="Screenshot 2 shortcut" href="resource/img/screenshot_2.png"><img class="img-responsive img-rounded img-thumbnail" src="resource/img/screenshot_2.png"></a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="panel panel-default">
+                <div class="panel-heading"><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> License</h3> </div>
+                <div class="panel-body">
+                    <p class="text-muted">MyShare Drive is a property of King Faisal Specialist Hospital and Research Centre.</small></p>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <p class="text-muted">MyShare Drive.</p>
+                </div>
+            </footer>
+            <div class="logo">
+                <ul>
+                    <li>
+                        <img src="http://kalua.im/assets/images/kaluaim_bw.png" alt="kaluaim"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="resource/lightbox2/js/lightbox.min.js"></script>
+        <script src="../analytics.js"></script>
+    </body>
+</html>
